@@ -64,4 +64,11 @@ If I could specify in some way that compB.css is depended on compA.css I could n
 The example loader tries to achieve this behavior via embedded comments of require calls `/* require("./file.css") */` in the css code.
 This is not a real/best solution but it demonstrate the goal.
 
-After doing so I expect the extract process to know more about the dependency tree and order the css correctly
+After doing so I expect the extract process to know more about the dependency tree and order the css correctly even if the import order in the javascript is the opposite
+
+compB.js
+
+```js
+import "compB.css";
+import { CompA } from "./compA.js";
+```
