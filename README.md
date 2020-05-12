@@ -1,15 +1,20 @@
-# The issue
 
-This repo has a minimal reproduction of an error in `mini-css-extract-plugin` when trying to use css imports in a css loader implementation. 
-## The story
+# The story
 
-I have a css framework that wants to provide css loading
+I have a css framework that wants to provide css loading via webpack
 
 I also want to specify css dependencies (not @import) in the css files.
 
 This can ensure that my javascript imports of components and css dose not mass up the order of css output
 
-Currently it's not possible for mini-css-extract-plugin to do it from unknown reason
+# The issue
+
+Currently it's not possible for mini-css-extract-plugin to do it from reasons that I don't understand.
+
+The error that I am getting is `Error: Didn't get a result from child compiler` 
+
+This repo has a minimal reproduction of an error in `mini-css-extract-plugin` when trying to use css imports in a css loader implementation. 
+
 
 ## Example Story
 
