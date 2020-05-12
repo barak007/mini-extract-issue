@@ -5,7 +5,7 @@ I have a css framework that wants to provide css loading via webpack
 
 I also want to specify css dependencies (not @import) in the css files.
 
-This can ensure that my javascript imports of components and css dose not mass up the order of css output
+This can ensure that my javascript imports of components and css does not mass up the order of css output
 
 # The issue
 

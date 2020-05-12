@@ -10,7 +10,6 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/i,
-                exclude: /\.st\.css$/,
                 use: [
                     MiniCssExtractPlugin.loader,
                     {
