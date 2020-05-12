@@ -1,5 +1,6 @@
-# Minimal reproduction of an error in `mini-css-extract-plugin`
+# The issue
 
+This repo has a minimal reproduction of an error in `mini-css-extract-plugin` when trying to use css imports in a css loader implementation. 
 ## The story
 
 I have a css framework that wants to provide css loading
