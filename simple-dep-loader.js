@@ -24,6 +24,6 @@ function transpile(css) {
 
     return [
         cssImports.join('\n'),
-        `module.exports = [module.id, ${JSON.stringify(css.replace(findRequireComments, ''))}, ''];`,
+        `module.exports = [[module.id, ${JSON.stringify(css.replace(findRequireComments, ''))}, '']];`,
     ].join('\n');
 }

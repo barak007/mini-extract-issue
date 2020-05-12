@@ -17,7 +17,7 @@ This repo has a minimal reproduction of an error in `mini-css-extract-plugin` wh
 
 ### How to see the issue
 
-Clone repo and install dependencies via `npm` or `yarn` then run the build script `yarn build` or `npm run build`
+Clone repo and install dependencies via `npm` or `yarn` then run the build script `yarn build` or `npm run build` or open vscode and press `F5` for debug
 
 This should run webpack build and fail with the error
 
