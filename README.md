@@ -7,7 +7,7 @@ I also want to specify css dependencies (not @import) in the css files.
 
 This can ensure that my javascript imports of components and css does not mass up the order of css output
 
-# The issue
+## The issue
 
 Currently it's not possible for mini-css-extract-plugin to do it from reasons that I don't understand.
 
@@ -15,6 +15,11 @@ The error that I am getting is `Error: Didn't get a result from child compiler`
 
 This repo has a minimal reproduction of an error in `mini-css-extract-plugin` when trying to use css imports in a css loader implementation. 
 
+### How to see the issue
+
+Clone repo and install dependencies via `npm` or `yarn` then run the build script `yarn build` or `npm run build`
+
+This should run webpack build and fail with the error
 
 ## Example story
 
