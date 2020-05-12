@@ -1,5 +1,5 @@
 /* 
-    This import has a "wrong" order my loader should fix it but it breaks with an error 
+    This import has a "wrong" order. the loader should fix it but it breaks with an error 
 */
 import './compB.css';
 import { CompA } from './compA';
