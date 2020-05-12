@@ -66,7 +66,8 @@ There is a hidden dependency between compB.css and compA.css since compB.css wan
 
 If I could specify in some way that compB.css is depended on compA.css I could not care about the import order of javascript and css modules.
 
-The example loader tries to achieve this behavior via embedded comments of require calls `/* require("./file.css") */` in the css code (which should add a dependency to the CSSModule).
+The example loader tries to achieve this behavior via embedded comments of require calls `/* require("./file.css") */` in the css code. then it transpile the comments into real require calls (which should add a dependency to the CSSModule).
+
 This is not a real/best solution but it demonstrate the goal.
 
 After doing so I expect the extract process to know more about the dependency tree from the css files and order the css correctly even if the import order in the javascript is the opposite
