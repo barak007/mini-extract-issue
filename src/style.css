@@ -1,0 +1,6 @@
+/* require("./dep1.css") */
+/* require("./dep2.css") */
+
+body {
+    background: blue;
+}
