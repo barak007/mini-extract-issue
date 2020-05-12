@@ -78,3 +78,7 @@ compB.js
 import "compB.css"; // has compA.css as a dependency
 import { CompA } from "./compA.js";
 ```
+
+## The Finale 
+
+The required feature is not to actually require/include the css file inside the css module, but hint the module graph when ordering the css about the dependency.
