@@ -1,0 +1,11 @@
+/* compB.css */
+
+/* require('./compA.css') */
+
+.compB {
+  color: green;
+}
+
+.compA {
+  color: purple;
+}

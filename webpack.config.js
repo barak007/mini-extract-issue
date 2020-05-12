@@ -3,7 +3,7 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development',
-    entry: './src/entry.js',
+    entry: './src/app.js',
     devtool: false,
     plugins: [new MiniCssExtractPlugin(), new HTMLWebpackPlugin()],
     module: {

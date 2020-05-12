@@ -1,3 +1,6 @@
+/* Change INJECT_CSS_IMPORTS to false to see the buggy output instead of an error */ 
+const INJECT_CSS_IMPORTS = true;
+
 module.exports = function (css) {
     const code = transpile(css);
 
@@ -23,7 +26,7 @@ function transpile(css) {
     const cssImports = m.map((requireComment) => requireComment.slice(2, -2).trim());
 
     return [
-        cssImports.join('\n'),
+        INJECT_CSS_IMPORTS ? cssImports.join('\n') : '',
         `module.exports = [[module.id, ${JSON.stringify(css.replace(findRequireComments, ''))}, '']];`,
     ].join('\n');
 }
